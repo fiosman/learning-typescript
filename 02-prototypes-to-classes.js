@@ -9,12 +9,19 @@ class Robot {
     console.log("Greetings. I am " + this.name + ".");
 
     for (const ability of this.abilities) {
-      console.log("I am able to " + this.abilities[i] + ".");
+      console.log("I am able to " + ability + ".");
     }
   };
 
-  charge = (amount) => {};
+  move = (amount) => {};
+
+  charge = (amount) => {
+    if (this.power < 100) {
+    }
+  };
 }
+
+class Humanoid {}
 
 module.exports.Humanoid = Humanoid;
 module.exports.Robot = Robot;
