@@ -13,10 +13,23 @@ class Robot {
     }
   };
 
-  move = (amount) => {};
+  move = (distance) => {
+    if (this.power < distance) {
+      console.log(`I do not have enough power to move ${distance} units.`);
+    } else {
+      console.log(`Moving ${distance} units.`);
+      this.power -= distance;
+    }
+  };
 
   charge = (amount) => {
     if (this.power < 100) {
+      this.power = Math.min(this.power + amount, 100);
+      console.log(`Recharged power supplies to ${this.power}.`);
+    }
+
+    if (this.power === 10) {
+      console.log("I am at optimal operational capacity.");
     }
   };
 }
