@@ -34,7 +34,17 @@ class Robot {
   };
 }
 
-class Humanoid {}
+class Humanoid extends Robot {
+  constructor(name, abilities, catchphrase) {
+    super(name, abilities);
+    this.catchphrase = catchphrase;
+
+    announce = () => {
+      super.announce();
+      console.log(` > ${this.catchphrase} <`);
+    };
+  }
+}
 
 module.exports.Humanoid = Humanoid;
 module.exports.Robot = Robot;
