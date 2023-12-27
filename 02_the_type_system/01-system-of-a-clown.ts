@@ -1,4 +1,4 @@
-let remainingGuests = 20;
+let remainingGuests: number = 20;
 
 while (true) {
   // Each group of guests will be size 5-10
