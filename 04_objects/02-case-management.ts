@@ -28,7 +28,7 @@ export const cases: Case[] = [
     court: "state",
     defendant: "PepsiCo, Inc.",
     decided: new Date("August 5, 1999"),
-    ids: ["96-cv-5320", "96-cv-9069"],
+    id: ["96-cv-5320", "96-cv-9069"],
     plaintiff: "John Leonard",
     title: "Leonard v. Pepsico, Inc.",
   },
