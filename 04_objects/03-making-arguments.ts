@@ -1,6 +1,6 @@
 export type PreTrialMotion = {
   step: "pre-trial";
-  classification: "dissmis" | "suppress" | "venue";
+  classification: "dismiss" | "suppress" | "venue";
 };
 
 export type PostTrialMotion = {
@@ -60,7 +60,7 @@ export const motions: Motion[] = [
   },
   {
     classification: "new trial",
-    estimatedDeliberationHours: 3,
+    deliberationHours: 3,
     from: "defendant",
     reason: "The duel's been accepted. There's no backing out. That's the law.",
     status: "pending",
