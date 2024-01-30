@@ -4,4 +4,15 @@ export type Settings = {
   validateGuess: (guess: string) => boolean;
 };
 
-const createCodeCracker = () => {};
+const createCodeCracker = ({ attempts, makeGuess, validateGuess }: Settings) => {
+  return (text: string) => {
+    for (let i = 0; i < attempts; i++) {
+      const guess = makeGuess(text, i);
+      if (validateGuess(guess)) {
+        return guess;
+      }
+    }
+
+    return undefined;
+  };
+};
