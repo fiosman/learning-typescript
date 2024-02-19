@@ -7,4 +7,9 @@ interface City {
   catchphrase?: string;
 }
 
-const describeCity = () => {};
+const describeCity = (city: City): string => {
+  return `${city.name}, New York\n
+  ${city.catchphrase && `* "${city.catchphrase}"`}\n
+  * ${city.coordinates.north} ${city.coordinates.west}
+  `;
+};
