@@ -3,4 +3,8 @@ interface Restaurant {
   name: string;
 }
 
-const groupRestaurants = (restaurants: Restaurant[]) => {};
+interface LandmarksByName {
+  [city: string]: string[];
+}
+
+const groupRestaurants = (restaurants: Restaurant[]): LandmarksByName => {};
