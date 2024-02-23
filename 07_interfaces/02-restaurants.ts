@@ -3,8 +3,8 @@ interface Restaurant {
   name: string;
 }
 
-interface LandmarksByName {
+interface RestaurantMap {
   [city: string]: string[];
 }
 
-const groupRestaurants = (restaurants: Restaurant[]): LandmarksByName => {};
+const groupRestaurants = (restaurants: Restaurant[]): RestaurantMap => {};
