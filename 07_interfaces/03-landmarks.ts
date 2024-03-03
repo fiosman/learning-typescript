@@ -41,3 +41,5 @@ interface River {
 }
 
 type Landmark = Mountain | Park | Lighthouse | Lake | Waterfall | River | Fort;
+
+const describeLandmark = (landmark: Landmark): string => {};
