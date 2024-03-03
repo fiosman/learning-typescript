@@ -24,6 +24,7 @@ interface Lake {
 }
 
 interface Fort {
+  name: string;
   type: "fort";
 }
 
