@@ -43,4 +43,7 @@ interface River {
 
 type Landmark = Mountain | Park | Lighthouse | Lake | Waterfall | River | Fort;
 
-const describeLandmark = (landmark: Landmark): string => {};
+const describeLandmark = (landmark: Landmark): string => {
+  const description: string = "";
+  return `${landmark.name} is a ${landmark.type} in Upstate New York.`;
+};
