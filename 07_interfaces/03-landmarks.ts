@@ -70,5 +70,5 @@ const describeLandmark = (landmark: Landmark): string => {
       break;
   }
 
-  return `${landmark.name} is a ${landmark.type} in Upstate New York.`;
+  return `${landmark.name} is a ${landmark.type} in Upstate New York. ${description}`;
 };
