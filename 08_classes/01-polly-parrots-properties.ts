@@ -10,4 +10,8 @@ export class Parrot {
   announce(): string {
     return `Squawk! I'm ${this.name}!`;
   }
+
+  learn(phrase: string) {
+    this.phrases.push(phrase);
+  }
 }
