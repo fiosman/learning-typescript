@@ -14,4 +14,8 @@ export class Parrot {
   learn(phrase: string) {
     this.phrases.push(phrase);
   }
+
+  speak() {
+    return this.phrases[Math.floor(Math.random() * this.phrases.length)];
+  }
 }
