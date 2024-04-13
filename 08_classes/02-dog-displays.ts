@@ -13,4 +13,8 @@ export class Puppy implements PuppyInTheWindow {
     this.colors = info.colors;
     this.furriness = info.furriness;
   }
+
+  adopt(owner: string) {
+    this.owner = owner;
+  }
 }
