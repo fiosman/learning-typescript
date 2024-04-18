@@ -1,6 +1,6 @@
 export type SmallPetFood = "bugs" | "fruits" | "insects" | "plants" | "seeds" | "vegetables";
 
-export class SmallFurryPet {
+export abstract class SmallFurryPet {
   readonly species: string;
   protected happiness: number = 0;
 
@@ -8,4 +8,6 @@ export class SmallFurryPet {
     this.species = species;
     this.happiness = happiness;
   }
+
+  abstract eats(food: SmallPetFood): boolean;
 }
