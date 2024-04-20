@@ -15,3 +15,9 @@ export abstract class SmallFurryPet {
     return this.happiness > 0;
   }
 }
+
+export class Gerbil extends SmallFurryPet {
+  constructor() {
+    super("Gerbil", 0);
+  }
+}
