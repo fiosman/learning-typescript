@@ -10,4 +10,8 @@ export abstract class SmallFurryPet {
   }
 
   abstract eats(food: SmallPetFood): boolean;
+
+  isHappy(): boolean {
+    return this.happiness > 0;
+  }
 }
