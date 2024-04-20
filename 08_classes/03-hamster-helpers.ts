@@ -4,9 +4,8 @@ export abstract class SmallFurryPet {
   readonly species: string;
   protected happiness: number = 0;
 
-  constructor(species: string, happiness: number) {
+  constructor(species: string) {
     this.species = species;
-    this.happiness = happiness;
   }
 
   abstract eats(food: SmallPetFood): boolean;
@@ -18,6 +17,6 @@ export abstract class SmallFurryPet {
 
 export class Gerbil extends SmallFurryPet {
   constructor() {
-    super("Gerbil", 0);
+    super("Gerbil");
   }
 }
