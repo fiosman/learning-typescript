@@ -19,4 +19,13 @@ export class Gerbil extends SmallFurryPet {
   constructor() {
     super("Gerbil");
   }
+
+  dig() {
+    this.happiness += 1;
+  }
+
+  eats(food: string) {
+    type oneOf = "insects" | "plants" | "seeds" | "vegetables";
+    return (food as oneOf) === food;
+  }
 }
