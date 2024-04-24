@@ -29,3 +29,9 @@ export class Gerbil extends SmallFurryPet {
     return (food as oneOf) === food;
   }
 }
+
+export class Hamster extends SmallFurryPet {
+  constructor() {
+    super("Hamster");
+  }
+}
