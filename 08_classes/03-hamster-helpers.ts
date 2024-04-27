@@ -34,4 +34,8 @@ export class Hamster extends SmallFurryPet {
   constructor() {
     super("Hamster");
   }
+
+  run() {
+    this.happiness += 1;
+  }
 }
