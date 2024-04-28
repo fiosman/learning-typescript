@@ -38,4 +38,8 @@ export class Hamster extends SmallFurryPet {
   run() {
     this.happiness += 1;
   }
+
+  eats() {
+    return true;
+  }
 }
