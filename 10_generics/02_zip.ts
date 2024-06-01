@@ -1,7 +1,7 @@
 const zip = <A, B>(a: A[], b: B[]): (A | B)[] => {
   let smallerArray: any[] = [];
   let longerArray: any[] = [];
-  const finalArray: any[] = [];
+  const finalArray: (A | B)[] = [];
 
   if (a.length > b.length) {
     longerArray = a;
